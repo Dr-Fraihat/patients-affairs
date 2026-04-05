@@ -18,35 +18,72 @@
     .page-wrap{padding:22px}
     .section-title{margin:0 0 6px;font-size:28px;color:var(--primary)}
     .section-subtitle{margin:0 0 18px;color:var(--muted);font-size:14px}
-    .grid{display:grid;gap:18px}.stats-grid{grid-template-columns:repeat(auto-fit,minmax(220px,1fr));margin-bottom:22px}.cards-grid{grid-template-columns:repeat(auto-fit,minmax(250px,1fr));margin-bottom:22px}.two-col{grid-template-columns:1.2fr .95fr;align-items:start}
-    .card{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);box-shadow:var(--shadow);padding:20px}.stat-card{min-height:118px;display:flex;flex-direction:column;justify-content:center;gap:8px}
-    .stat-title{font-size:14px;color:var(--muted)}.stat-value{font-size:34px;font-weight:800;color:var(--primary)}
-    .toolbar{display:flex;gap:10px;flex-wrap:wrap;align-items:center}.btn,button{border:none;background:var(--primary);color:#fff;padding:11px 16px;border-radius:14px;cursor:pointer;font-size:14px;transition:.18s ease}.btn:hover,button:hover{transform:translateY(-1px);background:var(--primary2)}.btn.secondary{background:#edf2ff;color:var(--primary);border:1px solid #cdd8f6}.btn.danger{background:var(--danger)}
-    .employee-card h3{margin:0 0 8px;font-size:18px;line-height:1.5}.employee-card .role{color:var(--primary);font-weight:800;min-height:48px;margin-bottom:14px}
-    .pill-row{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:18px}.pill{padding:8px 12px;border-radius:999px;font-size:13px;font-weight:800;border:1px solid;background:#fff}.pill.total{color:#2347a4;background:#eef3ff;border-color:#c9d6ff}.pill.done{color:var(--success);background:#ecfdf3;border-color:#bbf7d0}.pill.progress{color:var(--warning);background:#fff7ed;border-color:#fed7aa}.pill.late{color:var(--danger);background:#fef2f2;border-color:#fecaca}.pill.new{color:var(--neutral);background:#f8fafc;border-color:#cbd5e1}
-    .form-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}.full-span{grid-column:1/-1}label{display:block;margin-bottom:8px;font-weight:800;color:#334155}
-    input,select,textarea{width:100%;padding:14px 15px;border-radius:14px;border:1px solid #cfd8ea;background:#fff;font-size:15px;outline:none}input:focus,select:focus,textarea:focus{border-color:#7fa1ff;box-shadow:0 0 0 4px rgba(66,99,235,.08)}textarea{min-height:110px;resize:vertical}
-    .employee-header{display:flex;justify-content:space-between;align-items:flex-start;gap:14px;flex-wrap:wrap;margin-bottom:18px}.employee-header h2{margin:0 0 6px;color:var(--primary);font-size:30px}.employee-header p{margin:0;color:var(--muted)}
-    .task-list{display:flex;flex-direction:column;gap:14px;margin-top:16px}.task-item{border:1px solid var(--border);border-radius:18px;background:#fff;overflow:hidden}.task-head{display:flex;justify-content:space-between;gap:12px;align-items:center;padding:16px 18px 10px;flex-wrap:wrap}.task-title{font-weight:800;font-size:17px;line-height:1.7}.task-body{padding:0 18px 18px}.task-fields{display:grid;grid-template-columns:160px 170px 1fr;gap:12px;margin-top:14px}
-    .status-badge{display:inline-flex;align-items:center;justify-content:center;min-width:98px;padding:8px 12px;border-radius:999px;font-size:13px;font-weight:800;border:1px solid}.status-new{color:var(--neutral);background:#f8fafc;border-color:#cbd5e1}.status-progress{color:var(--warning);background:#fff7ed;border-color:#fed7aa}.status-done{color:var(--success);background:#ecfdf3;border-color:#bbf7d0}.status-late{color:var(--danger);background:#fef2f2;border-color:#fecaca}
-    .task-actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}.muted-box{background:#f8fbff;border:1px dashed #b9c8e5;border-radius:16px;padding:16px;color:#56647f;line-height:1.9}.small-note,.footer-note,.sync-note{color:var(--muted);font-size:13px}.top-actions{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:18px}.empty-state{padding:25px;text-align:center;color:var(--muted)}
-    .banner{margin-bottom:18px;padding:14px 16px;border-radius:16px;border:1px solid #fde68a;background:#fffbeb;color:#92400e}
-    .loading{opacity:.6;pointer-events:none}.hidden{display:none}
+    .grid{display:grid;gap:18px}
+    .stats-grid{grid-template-columns:repeat(auto-fit,minmax(220px,1fr));margin-bottom:22px}
+    .cards-grid{grid-template-columns:repeat(auto-fit,minmax(250px,1fr));margin-bottom:22px}
+    .two-col{grid-template-columns:1.2fr .95fr;align-items:start}
+    .three-col{grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
+    .card{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);box-shadow:var(--shadow);padding:20px}
+    .stat-card{min-height:118px;display:flex;flex-direction:column;justify-content:center;gap:8px}
+    .stat-title{font-size:14px;color:var(--muted)}
+    .stat-value{font-size:34px;font-weight:800;color:var(--primary)}
+    .toolbar{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+    .btn,button{border:none;background:var(--primary);color:#fff;padding:11px 16px;border-radius:14px;cursor:pointer;font-size:14px;transition:.18s ease}
+    .btn:hover,button:hover{transform:translateY(-1px);background:var(--primary2)}
+    .btn.secondary{background:#edf2ff;color:var(--primary);border:1px solid #cdd8f6}
+    .btn.danger{background:var(--danger)}
+    .btn.ghost{background:#f8fbff;color:var(--primary);border:1px solid #d9e2f1}
+    .employee-card h3{margin:0 0 8px;font-size:18px;line-height:1.5}
+    .employee-card .role{color:var(--primary);font-weight:800;min-height:48px;margin-bottom:14px}
+    .pill-row{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:18px}
+    .pill{padding:8px 12px;border-radius:999px;font-size:13px;font-weight:800;border:1px solid;background:#fff}
+    .pill.total{color:#2347a4;background:#eef3ff;border-color:#c9d6ff}
+    .pill.done{color:var(--success);background:#ecfdf3;border-color:#bbf7d0}
+    .pill.progress{color:var(--warning);background:#fff7ed;border-color:#fed7aa}
+    .pill.late{color:var(--danger);background:#fef2f2;border-color:#fecaca}
+    .pill.new{color:var(--neutral);background:#f8fafc;border-color:#cbd5e1}
+    .form-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+    .full-span{grid-column:1/-1}
+    label{display:block;margin-bottom:8px;font-weight:800;color:#334155}
+    input,select,textarea{width:100%;padding:14px 15px;border-radius:14px;border:1px solid #cfd8ea;background:#fff;font-size:15px;outline:none}
+    input:focus,select:focus,textarea:focus{border-color:#7fa1ff;box-shadow:0 0 0 4px rgba(66,99,235,.08)}
+    input[type="number"]{min-width:0}
+    textarea{min-height:110px;resize:vertical}
+    .employee-header{display:flex;justify-content:space-between;align-items:flex-start;gap:14px;flex-wrap:wrap;margin-bottom:18px}
+    .employee-header h2{margin:0 0 6px;color:var(--primary);font-size:30px}
+    .employee-header p{margin:0;color:var(--muted)}
+    .task-list{display:flex;flex-direction:column;gap:14px;margin-top:16px}
+    .task-item{border:1px solid var(--border);border-radius:18px;background:#fff;overflow:hidden}
+    .task-head{display:flex;justify-content:space-between;gap:12px;align-items:center;padding:16px 18px 10px;flex-wrap:wrap}
+    .task-title{font-weight:800;font-size:17px;line-height:1.7}
+    .task-body{padding:0 18px 18px}
+    .task-fields{display:grid;grid-template-columns:180px 210px 1fr;gap:12px;margin-top:14px}
+    .status-badge{display:inline-flex;align-items:center;justify-content:center;min-width:98px;padding:8px 12px;border-radius:999px;font-size:13px;font-weight:800;border:1px solid}
+    .status-new{color:var(--neutral);background:#f8fafc;border-color:#cbd5e1}
+    .status-progress{color:var(--warning);background:#fff7ed;border-color:#fed7aa}
+    .status-done{color:var(--success);background:#ecfdf3;border-color:#bbf7d0}
+    .status-late{color:var(--danger);background:#fef2f2;border-color:#fecaca}
+    .task-actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
+    .muted-box{background:#f8fbff;border:1px dashed #b9c8e5;border-radius:16px;padding:16px;color:#56647f;line-height:1.9}
+    .small-note,.footer-note,.sync-note{color:var(--muted);font-size:13px}
+    .top-actions{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:18px}
+    .empty-state{padding:25px;text-align:center;color:var(--muted)}
+    .loading{opacity:.6;pointer-events:none}
+    .filters{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px;margin-bottom:10px}
+    .date-chip{display:inline-flex;align-items:center;gap:8px;padding:8px 12px;background:#eef3ff;border:1px solid #c9d6ff;border-radius:999px;color:#2347a4;font-weight:800}
+    .period-summary strong{color:var(--primary)}
     @media (max-width:1050px){.two-col{grid-template-columns:1fr}}
     @media (max-width:820px){.task-fields,.form-grid{grid-template-columns:1fr}.hero h1{font-size:24px}.employee-header h2{font-size:24px}}
   </style>
 </head>
 <body>
-  <div class="hero"><div class="hero-inner"><h1 id="heroTitle">داشبورد شؤون المرضى والاستقبال</h1><p id="heroSubtitle">مركز التوحد - متابعة الإنجاز اليومي للفريق والمؤشرات التشغيلية</p></div></div>
+  <div class="hero"><div class="hero-inner"><h1 id="heroTitle">داشبورد شؤون المرضى والاستقبال</h1><p id="heroSubtitle">مركز التوحد - متابعة الإنجاز اليومي والفترات التقييمية</p></div></div>
   <div class="page-wrap" id="app"></div>
 
   <script type="module">
     import { initializeApp } from 'https://www.gstatic.com/firebasejs/10.12.5/firebase-app.js';
-    import {
-      getFirestore, doc, getDoc, setDoc, updateDoc, onSnapshot, serverTimestamp
-    } from 'https://www.gstatic.com/firebasejs/10.12.5/firebase-firestore.js';
+    import { getFirestore, doc, getDoc, setDoc, updateDoc, onSnapshot, serverTimestamp } from 'https://www.gstatic.com/firebasejs/10.12.5/firebase-firestore.js';
 
-    // الصق إعدادات Firebase الخاصة بك هنا
     const firebaseConfig = {
       apiKey: 'AIzaSyAyQAI0g_riIf2g9wbOeqKilQfyRCicYg',
       authDomain: 'patients-affairs-dashboard.firebaseapp.com',
@@ -76,35 +113,125 @@
     let syncing = false;
     const dashboardDocId = 'main';
 
+    function todayStr(){ return new Date().toISOString().slice(0,10); }
+    function startOfMonthStr(){
+      const d = new Date();
+      return new Date(d.getFullYear(), d.getMonth(), 1).toISOString().slice(0,10);
+    }
+    function startOfYearStr(){
+      const d = new Date();
+      return new Date(d.getFullYear(), 0, 1).toISOString().slice(0,10);
+    }
     function slugify(text){ return text.toString().trim().replace(/\s+/g,'-').replace(/[^\u0600-\u06FF\w-]/g,'').toLowerCase(); }
-    function createTask(text,isCustom=false){ return { id: Date.now().toString(36)+Math.random().toString(36).slice(2,8), text, status:'new', completedCount:'', note:'', isCustom }; }
+    function createEntry(){ return { status:'new', completedCount:'', note:'' }; }
+    function createTask(text,isCustom=false){ return { id: Date.now().toString(36)+Math.random().toString(36).slice(2,8), text, isCustom, logs:{} }; }
     function buildEmployee(name,role){ return { id: slugify(name), name, role, tasks:(roleTasks[role]||[]).map(t=>createTask(t,false)) }; }
+    function normalizeCount(v){
+      const s = String(v ?? '').trim();
+      if(s==='') return '';
+      const n = Number(s);
+      if(!Number.isFinite(n) || n < 0) return '';
+      return String(Math.floor(n));
+    }
+    function ensureTaskShape(task){
+      const safe = {
+        id: task.id || Date.now().toString(36)+Math.random().toString(36).slice(2,8),
+        text: task.text || '',
+        isCustom: !!task.isCustom,
+        logs: {}
+      };
+      if(task.logs && typeof task.logs === 'object'){
+        Object.entries(task.logs).forEach(([date, entry]) => {
+          safe.logs[date] = {
+            status: entry?.status || 'new',
+            completedCount: normalizeCount(entry?.completedCount),
+            note: entry?.note || ''
+          };
+        });
+      } else {
+        const oldStatus = task.status || 'new';
+        const oldCount = normalizeCount(task.completedCount);
+        const oldNote = task.note || '';
+        if(oldStatus !== 'new' || oldCount !== '' || oldNote){
+          safe.logs[todayStr()] = { status: oldStatus, completedCount: oldCount, note: oldNote };
+        }
+      }
+      return safe;
+    }
     function ensureEmployeeShape(employee){
-      employee.id=employee.id||slugify(employee.name);
-      employee.tasks=Array.isArray(employee.tasks)?employee.tasks:[];
-      employee.tasks=employee.tasks.map(task=>({
-        id:task.id||Date.now().toString(36)+Math.random().toString(36).slice(2,8),
-        text:task.text||'', status:task.status||'new', completedCount:task.completedCount ?? '', note:task.note||'', isCustom:!!task.isCustom
-      }));
-      const roleBasedTexts=roleTasks[employee.role]||[];
-      const existing=new Set(employee.tasks.filter(t=>!t.isCustom).map(t=>t.text));
-      roleBasedTexts.forEach(text=>{ if(!existing.has(text)) employee.tasks.push(createTask(text,false)); });
+      employee.id = employee.id || slugify(employee.name);
+      employee.tasks = Array.isArray(employee.tasks) ? employee.tasks.map(ensureTaskShape) : [];
+      const roleBasedTexts = roleTasks[employee.role] || [];
+      const existing = new Set(employee.tasks.filter(t=>!t.isCustom).map(t=>t.text));
+      roleBasedTexts.forEach(text => { if(!existing.has(text)) employee.tasks.push(createTask(text,false)); });
       return employee;
     }
     function getEmployeeById(id){ return employees.find(emp=>emp.id===id); }
-    function getCounts(tasks){ return tasks.reduce((acc,t)=>{ acc.total++; if(t.status==='done') acc.done++; else if(t.status==='progress') acc.progress++; else if(t.status==='late') acc.late++; else acc.new++; return acc; }, { total:0, done:0, progress:0, late:0, new:0 }); }
-    function getGlobalCounts(){ return employees.reduce((acc,emp)=>{ const c=getCounts(emp.tasks); acc.total+=c.total; acc.done+=c.done; acc.progress+=c.progress; acc.late+=c.late; acc.new+=c.new; return acc; }, { total:0, done:0, progress:0, late:0, new:0 }); }
     function getEmployeeLink(employeeId){ const url=new URL(window.location.href); url.searchParams.set('employee', employeeId); return url.toString(); }
     function statusLabel(status){ return ({new:'جديدة',progress:'قيد التنفيذ',done:'تم الإنجاز',late:'متأخرة'})[status] || 'جديدة'; }
     function statusClass(status){ return ({new:'status-new',progress:'status-progress',done:'status-done',late:'status-late'})[status] || 'status-new'; }
     function escapeHtml(value){ return String(value||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
-    function configReady(){ return !Object.values(firebaseConfig).some(v => String(v).startsWith('PASTE_')); }
+    function getTaskEntry(task, date){ return task.logs?.[date] || createEntry(); }
+    function setTaskEntry(task, date, field, value){
+      task.logs = task.logs || {};
+      const current = getTaskEntry(task, date);
+      task.logs[date] = { ...current, [field]: field === 'completedCount' ? normalizeCount(value) : value };
+    }
+    function countByStatus(entries){
+      return entries.reduce((acc, e) => {
+        acc.total++;
+        if(e.status==='done') acc.done++;
+        else if(e.status==='progress') acc.progress++;
+        else if(e.status==='late') acc.late++;
+        else acc.new++;
+        return acc;
+      }, { total:0, done:0, progress:0, late:0, new:0 });
+    }
+    function getDailyCounts(tasks, date){
+      return countByStatus(tasks.map(t => getTaskEntry(t, date)));
+    }
+    function getPeriodSummary(tasks, fromDate, toDate){
+      const summary = { loggedDays:0, records:0, done:0, progress:0, late:0, quantity:0 };
+      const daySet = new Set();
+      tasks.forEach(task => {
+        Object.entries(task.logs || {}).forEach(([date, entry]) => {
+          if((!fromDate || date >= fromDate) && (!toDate || date <= toDate)){
+            const count = Number(entry.completedCount || 0);
+            if(entry.status !== 'new' || entry.note || count > 0){
+              summary.records++;
+              daySet.add(date);
+              if(entry.status === 'done') summary.done++;
+              else if(entry.status === 'progress') summary.progress++;
+              else if(entry.status === 'late') summary.late++;
+              summary.quantity += count;
+            }
+          }
+        });
+      });
+      summary.loggedDays = daySet.size;
+      return summary;
+    }
+    function getGlobalDailyCounts(date){
+      return employees.reduce((acc, emp) => {
+        const c = getDailyCounts(emp.tasks, date);
+        acc.total += c.total; acc.done += c.done; acc.progress += c.progress; acc.late += c.late; acc.new += c.new;
+        return acc;
+      }, { total:0, done:0, progress:0, late:0, new:0 });
+    }
+    function getGlobalPeriodSummary(fromDate, toDate){
+      return employees.reduce((acc, emp) => {
+        const s = getPeriodSummary(emp.tasks, fromDate, toDate);
+        acc.loggedDays += s.loggedDays;
+        acc.records += s.records;
+        acc.done += s.done;
+        acc.progress += s.progress;
+        acc.late += s.late;
+        acc.quantity += s.quantity;
+        return acc;
+      }, { loggedDays:0, records:0, done:0, progress:0, late:0, quantity:0 });
+    }
 
     async function initFirebase(){
-      if(!configReady()){
-        renderConfigWarning();
-        return;
-      }
       const app = initializeApp(firebaseConfig);
       db = getFirestore(app);
       await seedIfNeeded();
@@ -142,49 +269,98 @@
       }
     }
 
-    function renderConfigWarning(){
-      document.getElementById('heroTitle').textContent='داشبورد شؤون المرضى والاستقبال';
-      document.getElementById('heroSubtitle').textContent='نسخة Vercel + Firebase';
-      appEl.innerHTML = `
-        <div class="banner">هذه النسخة جاهزة للربط الفوري، لكن يجب أولاً إدخال إعدادات Firebase داخل الملف.</div>
-        <div class="card">
-          <h2 class="section-title" style="font-size:24px">ما الذي تحتاجه الآن؟</h2>
-          <div class="muted-box">
-            <div>1. افتح Firebase Console وأنشئ مشروعاً جديداً.</div>
-            <div>2. فعّل Firestore Database.</div>
-            <div>3. أضف Web App وانسخ القيم التالية: apiKey, authDomain, projectId, storageBucket, messagingSenderId, appId.</div>
-            <div>4. استبدل القيم الموجودة أعلى الملف مكان PASTE_...</div>
-            <div>5. ارفع الملف على Vercel.</div>
-          </div>
-        </div>`;
+    function dashboardDates(){
+      const params = new URLSearchParams(window.location.search);
+      return {
+        date: params.get('date') || todayStr(),
+        from: params.get('from') || startOfMonthStr(),
+        to: params.get('to') || todayStr()
+      };
+    }
+
+    function setSearchParams(next){
+      const url = new URL(window.location.href);
+      Object.entries(next).forEach(([k,v]) => {
+        if(v) url.searchParams.set(k, v);
+        else url.searchParams.delete(k);
+      });
+      window.location.href = url.toString();
     }
 
     function renderDashboard(){
-      const global=getGlobalCounts();
+      const dates = dashboardDates();
+      const daily = getGlobalDailyCounts(dates.date);
+      const period = getGlobalPeriodSummary(dates.from, dates.to);
+
       document.getElementById('heroTitle').textContent='داشبورد شؤون المرضى والاستقبال';
-      document.getElementById('heroSubtitle').textContent='مركز التوحد - متابعة الإنجاز اليومي للفريق والمؤشرات التشغيلية';
+      document.getElementById('heroSubtitle').textContent='مركز التوحد - متابعة الإنجاز اليومي وتقييم الأداء عبر الفترات';
       appEl.innerHTML = `
+        <div class="card" style="margin-bottom:18px">
+          <h2 class="section-title" style="font-size:24px">فلاتر المتابعة</h2>
+          <div class="filters">
+            <div>
+              <label for="dashboardDate">متابعة يوم محدد</label>
+              <input id="dashboardDate" type="date" value="${dates.date}" />
+            </div>
+            <div>
+              <label for="dashboardFrom">من تاريخ</label>
+              <input id="dashboardFrom" type="date" value="${dates.from}" />
+            </div>
+            <div>
+              <label for="dashboardTo">إلى تاريخ</label>
+              <input id="dashboardTo" type="date" value="${dates.to}" />
+            </div>
+          </div>
+          <div class="toolbar">
+            <button onclick="window.applyDashboardFilters()">تطبيق الفلاتر</button>
+            <button class="btn ghost" onclick="window.quickPeriod('month')">هذا الشهر</button>
+            <button class="btn ghost" onclick="window.quickPeriod('year')">هذه السنة</button>
+            <button class="btn ghost" onclick="window.quickPeriod('today')">اليوم</button>
+          </div>
+        </div>
+
+        <div class="card" style="margin-bottom:18px">
+          <div class="toolbar" style="justify-content:space-between">
+            <div class="date-chip">متابعة اليوم المحدد: ${dates.date}</div>
+            <div class="date-chip">تقييم الفترة: ${dates.from} إلى ${dates.to}</div>
+          </div>
+        </div>
+
         <div class="grid stats-grid">
-          <div class="card stat-card"><div class="stat-title">إجمالي المهام</div><div class="stat-value">${global.total}</div></div>
-          <div class="card stat-card"><div class="stat-title">المهام المنجزة</div><div class="stat-value">${global.done}</div></div>
-          <div class="card stat-card"><div class="stat-title">المهام قيد التنفيذ</div><div class="stat-value">${global.progress}</div></div>
-          <div class="card stat-card"><div class="stat-title">المهام المتأخرة</div><div class="stat-value">${global.late}</div></div>
+          <div class="card stat-card"><div class="stat-title">إجمالي مهام اليوم المحدد</div><div class="stat-value">${daily.total}</div></div>
+          <div class="card stat-card"><div class="stat-title">المهام المنجزة اليوم</div><div class="stat-value">${daily.done}</div></div>
+          <div class="card stat-card"><div class="stat-title">قيد التنفيذ اليوم</div><div class="stat-value">${daily.progress}</div></div>
+          <div class="card stat-card"><div class="stat-title">المتأخرة اليوم</div><div class="stat-value">${daily.late}</div></div>
+        </div>
+
+        <div class="grid stats-grid">
+          <div class="card stat-card"><div class="stat-title">إجمالي السجلات خلال الفترة</div><div class="stat-value">${period.records}</div></div>
+          <div class="card stat-card"><div class="stat-title">إجمالي العدد المنجز خلال الفترة</div><div class="stat-value">${period.quantity}</div></div>
+          <div class="card stat-card"><div class="stat-title">المهام المنجزة خلال الفترة</div><div class="stat-value">${period.done}</div></div>
+          <div class="card stat-card"><div class="stat-title">المهام المتأخرة خلال الفترة</div><div class="stat-value">${period.late}</div></div>
         </div>
 
         <h2 class="section-title">الفريق</h2>
-        <p class="section-subtitle">البيانات متزامنة مباشرة بين جميع الأجهزة بعد رفع الملف على Vercel وربطه بـ Firebase.</p>
+        <p class="section-subtitle">العدد المنجز أصبح غير محدود بعدد خانة واحدة، ويمكن تقييم العمل حسب اليوم أو الفترة أو السنة.</p>
 
         <div class="grid cards-grid">
           ${employees.map(emp=>{
-            const counts=getCounts(emp.tasks);
+            const dailyCounts = getDailyCounts(emp.tasks, dates.date);
+            const periodSummary = getPeriodSummary(emp.tasks, dates.from, dates.to);
             return `<div class="card employee-card">
               <a href="${getEmployeeLink(emp.id)}" target="_blank" rel="noopener"><h3>${emp.name}</h3></a>
               <div class="role">${emp.role}</div>
               <div class="pill-row">
-                <span class="pill total">إجمالي: ${counts.total}</span>
-                <span class="pill done">منجزة: ${counts.done}</span>
-                <span class="pill progress">قيد التنفيذ: ${counts.progress}</span>
-                <span class="pill late">متأخرة: ${counts.late}</span>
+                <span class="pill total">مهام اليوم: ${dailyCounts.total}</span>
+                <span class="pill done">منجزة اليوم: ${dailyCounts.done}</span>
+                <span class="pill progress">قيد التنفيذ: ${dailyCounts.progress}</span>
+                <span class="pill late">متأخرة: ${dailyCounts.late}</span>
+              </div>
+              <div class="muted-box period-summary" style="margin-bottom:14px">
+                <div><strong>الفترة:</strong> ${dates.from} → ${dates.to}</div>
+                <div><strong>السجلات:</strong> ${periodSummary.records}</div>
+                <div><strong>العدد المنجز:</strong> ${periodSummary.quantity}</div>
+                <div><strong>المنجز:</strong> ${periodSummary.done} | <strong>المتأخر:</strong> ${periodSummary.late}</div>
               </div>
               <div class="toolbar"><a class="btn" href="${getEmployeeLink(emp.id)}" target="_blank" rel="noopener">فتح الصفحة</a></div>
             </div>`;
@@ -212,141 +388,221 @@
             </div>
           </div>
           <div class="card">
-            <h2 class="section-title" style="font-size:24px">حالة المزامنة</h2>
+            <h2 class="section-title" style="font-size:24px">كيف يعمل التقييم الآن؟</h2>
             <div class="muted-box">
-              <div>• هذه النسخة تستخدم Firebase Firestore.</div>
-              <div>• أي تحديث من الموظف يظهر مباشرة عندك.</div>
-              <div>• يعمل على الكمبيوتر والجوال بعد رفعه على Vercel.</div>
-              <div>• الخطوة التالية لاحقاً: إضافة تسجيل دخول لكل موظف.</div>
+              <div>• كل تحديث أصبح مرتبطاً بتاريخ محدد، وليس بيوم واحد فقط.</div>
+              <div>• تستطيع اختيار أي يوم لمراجعة العمل اليومي.</div>
+              <div>• وتستطيع اختيار فترة كاملة: شهر، سنة، أو أي مدة أخرى للتقييم النهائي.</div>
+              <div>• خانة العدد المنجز تقبل أرقاماً كبيرة مثل 25 أو 120 بدون مشكلة.</div>
             </div>
           </div>
         </div>`;
     }
 
     function renderEmployeePage(employeeId){
-      const employee=getEmployeeById(employeeId);
+      const employee = getEmployeeById(employeeId);
       if(!employee){ appEl.innerHTML='<div class="card empty-state">الموظف غير موجود.</div>'; return; }
-      const counts=getCounts(employee.tasks);
-      document.getElementById('heroTitle').textContent=employee.name;
-      document.getElementById('heroSubtitle').textContent=employee.role;
+
+      const params = new URLSearchParams(window.location.search);
+      const selectedDate = params.get('date') || todayStr();
+      const fromDate = params.get('from') || startOfMonthStr();
+      const toDate = params.get('to') || todayStr();
+      const dailyCounts = getDailyCounts(employee.tasks, selectedDate);
+      const period = getPeriodSummary(employee.tasks, fromDate, toDate);
+
+      document.getElementById('heroTitle').textContent = employee.name;
+      document.getElementById('heroSubtitle').textContent = employee.role;
+
       appEl.innerHTML = `
         <div class="top-actions">
-          <a class="btn secondary" href="${window.location.pathname}">العودة إلى الداشبورد الرئيسي</a>
-          <div class="sync-note">التحديثات تحفظ مباشرة وتظهر فوراً على جميع الأجهزة.</div>
+          <a class="btn secondary" href="${window.location.pathname}?date=${selectedDate}&from=${fromDate}&to=${toDate}">العودة إلى الداشبورد الرئيسي</a>
+          <div class="sync-note">كل تعديل يحفظ مباشرة حسب التاريخ المحدد ويظهر فوراً على جميع الأجهزة.</div>
+        </div>
+
+        <div class="card" style="margin-bottom:18px">
+          <div class="filters">
+            <div>
+              <label for="employeeDate">تاريخ الإدخال اليومي</label>
+              <input id="employeeDate" type="date" value="${selectedDate}" />
+            </div>
+            <div>
+              <label for="employeeFrom">بداية فترة التقييم</label>
+              <input id="employeeFrom" type="date" value="${fromDate}" />
+            </div>
+            <div>
+              <label for="employeeTo">نهاية فترة التقييم</label>
+              <input id="employeeTo" type="date" value="${toDate}" />
+            </div>
+          </div>
+          <div class="toolbar">
+            <button onclick="window.applyEmployeeFilters('${employee.id}')">تطبيق الفلاتر</button>
+            <button class="btn ghost" onclick="window.quickEmployeePeriod('${employee.id}','month')">هذا الشهر</button>
+            <button class="btn ghost" onclick="window.quickEmployeePeriod('${employee.id}','year')">هذه السنة</button>
+            <button class="btn ghost" onclick="window.quickEmployeePeriod('${employee.id}','today')">اليوم</button>
+          </div>
         </div>
 
         <div class="card">
           <div class="employee-header">
             <div><h2>${employee.name}</h2><p>${employee.role}</p></div>
             <div class="pill-row">
-              <span class="pill total">إجمالي: ${counts.total}</span>
-              <span class="pill done">منجزة: ${counts.done}</span>
-              <span class="pill progress">قيد التنفيذ: ${counts.progress}</span>
-              <span class="pill late">متأخرة: ${counts.late}</span>
-              <span class="pill new">جديدة: ${counts.new}</span>
+              <span class="pill total">مهام ${selectedDate}: ${dailyCounts.total}</span>
+              <span class="pill done">منجزة: ${dailyCounts.done}</span>
+              <span class="pill progress">قيد التنفيذ: ${dailyCounts.progress}</span>
+              <span class="pill late">متأخرة: ${dailyCounts.late}</span>
+              <span class="pill new">جديدة: ${dailyCounts.new}</span>
             </div>
           </div>
-          <div class="toolbar"><button class="btn secondary" onclick="window.resetEmployeeStatuses('${employee.id}')">إعادة ضبط حالات اليوم</button></div>
+          <div class="grid three-col">
+            <div class="card stat-card"><div class="stat-title">سجلات الفترة</div><div class="stat-value">${period.records}</div></div>
+            <div class="card stat-card"><div class="stat-title">العدد المنجز خلال الفترة</div><div class="stat-value">${period.quantity}</div></div>
+            <div class="card stat-card"><div class="stat-title">المتأخرة خلال الفترة</div><div class="stat-value">${period.late}</div></div>
+          </div>
+          <div class="toolbar" style="margin-top:12px">
+            <button class="btn secondary" onclick="window.resetEmployeeDate('${employee.id}','${selectedDate}')">إعادة ضبط هذا اليوم فقط</button>
+          </div>
         </div>
 
         <div class="grid two-col" style="margin-top:18px">
           <div class="card">
-            <h2 class="section-title" style="font-size:24px">المهام اليومية</h2>
-            <p class="section-subtitle">المهام الأساسية مدخلة مسبقاً حسب الوظيفة، ويمكن تحديث الحالة والملاحظات أو إضافة مهمة جديدة.</p>
+            <h2 class="section-title" style="font-size:24px">المهام بتاريخ ${selectedDate}</h2>
+            <p class="section-subtitle">العدد المنجز الآن يقبل أرقاماً مفتوحة، ويمكنك التبديل بين أيام السنة لمراجعة أو تحديث أي يوم سابق.</p>
             <div class="task-list">
-              ${employee.tasks.map(task=>`
+              ${employee.tasks.map(task=>{
+                const entry = getTaskEntry(task, selectedDate);
+                return `
                 <div class="task-item">
                   <div class="task-head">
                     <div class="task-title">${task.text}</div>
-                    <span class="status-badge ${statusClass(task.status)}">${statusLabel(task.status)}</span>
+                    <span class="status-badge ${statusClass(entry.status)}">${statusLabel(entry.status)}</span>
                   </div>
                   <div class="task-body">
                     <div class="task-fields">
                       <div>
                         <label>الحالة</label>
-                        <select onchange="window.updateTaskField('${employee.id}','${task.id}','status',this.value)">
-                          <option value="new" ${task.status==='new'?'selected':''}>جديدة</option>
-                          <option value="progress" ${task.status==='progress'?'selected':''}>قيد التنفيذ</option>
-                          <option value="done" ${task.status==='done'?'selected':''}>تم الإنجاز</option>
-                          <option value="late" ${task.status==='late'?'selected':''}>متأخرة</option>
+                        <select onchange="window.updateTaskField('${employee.id}','${task.id}','${selectedDate}','status',this.value)">
+                          <option value="new" ${entry.status==='new'?'selected':''}>جديدة</option>
+                          <option value="progress" ${entry.status==='progress'?'selected':''}>قيد التنفيذ</option>
+                          <option value="done" ${entry.status==='done'?'selected':''}>تم الإنجاز</option>
+                          <option value="late" ${entry.status==='late'?'selected':''}>متأخرة</option>
                         </select>
                       </div>
                       <div>
                         <label>العدد المنجز</label>
-                        <input type="number" min="0" value="${task.completedCount}" oninput="window.updateTaskField('${employee.id}','${task.id}','completedCount',this.value)" placeholder="0" />
+                        <input type="number" inputmode="numeric" step="1" min="0" value="${entry.completedCount}" oninput="window.updateTaskField('${employee.id}','${task.id}','${selectedDate}','completedCount',this.value)" placeholder="مثال: 25" />
                       </div>
                       <div>
                         <label>ملاحظات</label>
-                        <input type="text" value="${escapeHtml(task.note)}" oninput="window.updateTaskField('${employee.id}','${task.id}','note',this.value)" placeholder="أضف ملاحظة مختصرة" />
+                        <input type="text" value="${escapeHtml(entry.note)}" oninput="window.updateTaskField('${employee.id}','${task.id}','${selectedDate}','note',this.value)" placeholder="أضف ملاحظة مختصرة" />
                       </div>
                     </div>
                     ${task.isCustom ? `<div class="task-actions"><button class="btn danger" onclick="window.deleteTask('${employee.id}','${task.id}')">حذف المهمة المضافة</button></div>` : `<div class="small-note">مهمة أساسية مرتبطة بالمسمى الوظيفي.</div>`}
                   </div>
-                </div>`).join('')}
+                </div>`;
+              }).join('')}
             </div>
           </div>
 
           <div class="card">
             <h2 class="section-title" style="font-size:24px">إضافة مهمة جديدة</h2>
-            <p class="section-subtitle">للمهام الإضافية غير الموجودة ضمن القائمة الأساسية.</p>
+            <p class="section-subtitle">تضاف كمهمة مستمرة، ويمكن تسجيلها في أي تاريخ لاحق.</p>
             <label for="customTaskText">اسم المهمة</label>
             <textarea id="customTaskText" placeholder="مثال: متابعة الموعد الملغى وإعادة جدولته"></textarea>
             <div class="toolbar" style="margin-top:12px"><button onclick="window.addCustomTask('${employee.id}')">إضافة المهمة</button></div>
             <div class="muted-box" style="margin-top:18px">
-              <div>• هذه الصفحة مناسبة للجوال والكمبيوتر.</div>
-              <div>• أي تعديل يحفظ مباشرة على Firebase.</div>
-              <div>• يمكن فتح رابط مستقل لكل موظف.</div>
+              <div>• عند تغيير التاريخ، ستشاهد سجل ذلك اليوم لنفس الموظف.</div>
+              <div>• في نهاية الشهر أو السنة يمكنك تقييم الأداء من ملخص الفترة.</div>
+              <div>• خانة العدد المنجز غير محدودة بـ 9، ويمكن إدخال 10 أو 100 أو أكثر.</div>
             </div>
           </div>
         </div>`;
     }
 
     async function addEmployee(){
-      const nameInput=document.getElementById('newEmployeeName');
-      const roleSelect=document.getElementById('newEmployeeRole');
-      const name=nameInput.value.trim();
-      const role=roleSelect.value;
+      const nameInput = document.getElementById('newEmployeeName');
+      const roleSelect = document.getElementById('newEmployeeRole');
+      const name = nameInput.value.trim();
+      const role = roleSelect.value;
       if(!name){ alert('يرجى إدخال اسم الموظف.'); return; }
-      const id=slugify(name);
+      const id = slugify(name);
       if(employees.some(e=>e.id===id)){ alert('يوجد موظف بنفس الاسم أو المعرّف.'); return; }
-      employees.push(buildEmployee(name,role));
+      employees.push(buildEmployee(name, role));
       await persist();
-      nameInput.value='';
+      nameInput.value = '';
     }
 
-    async function updateTaskField(employeeId,taskId,field,value){
-      const emp=getEmployeeById(employeeId); if(!emp) return;
-      const task=emp.tasks.find(t=>t.id===taskId); if(!task) return;
-      task[field]=value; await persist();
+    async function updateTaskField(employeeId, taskId, date, field, value){
+      const emp = getEmployeeById(employeeId); if(!emp) return;
+      const task = emp.tasks.find(t=>t.id===taskId); if(!task) return;
+      setTaskEntry(task, date, field, value);
+      await persist();
     }
 
     async function addCustomTask(employeeId){
-      const emp=getEmployeeById(employeeId); if(!emp) return;
-      const textarea=document.getElementById('customTaskText');
-      const text=textarea.value.trim(); if(!text){ alert('يرجى كتابة اسم المهمة.'); return; }
-      emp.tasks.unshift(createTask(text,true)); textarea.value=''; await persist();
+      const emp = getEmployeeById(employeeId); if(!emp) return;
+      const textarea = document.getElementById('customTaskText');
+      const text = textarea.value.trim();
+      if(!text){ alert('يرجى كتابة اسم المهمة.'); return; }
+      emp.tasks.unshift(createTask(text,true));
+      textarea.value = '';
+      await persist();
     }
 
-    async function deleteTask(employeeId,taskId){
-      const emp=getEmployeeById(employeeId); if(!emp) return;
-      emp.tasks=emp.tasks.filter(t=>!(t.id===taskId && t.isCustom)); await persist();
+    async function deleteTask(employeeId, taskId){
+      const emp = getEmployeeById(employeeId); if(!emp) return;
+      emp.tasks = emp.tasks.filter(t=>!(t.id===taskId && t.isCustom));
+      await persist();
     }
 
-    async function resetEmployeeStatuses(employeeId){
-      const emp=getEmployeeById(employeeId); if(!emp) return;
-      emp.tasks=emp.tasks.map(t=>({ ...t, status:'new', completedCount:'', note:t.note || '' })); await persist();
+    async function resetEmployeeDate(employeeId, date){
+      const emp = getEmployeeById(employeeId); if(!emp) return;
+      emp.tasks.forEach(task => { if(task.logs && task.logs[date]) delete task.logs[date]; });
+      await persist();
+    }
+
+    function applyDashboardFilters(){
+      const date = document.getElementById('dashboardDate').value || todayStr();
+      const from = document.getElementById('dashboardFrom').value || startOfMonthStr();
+      const to = document.getElementById('dashboardTo').value || todayStr();
+      setSearchParams({ date, from, to, employee: null });
+    }
+
+    function quickPeriod(mode){
+      const date = todayStr();
+      const from = mode === 'year' ? startOfYearStr() : mode === 'month' ? startOfMonthStr() : date;
+      const to = date;
+      setSearchParams({ date, from, to, employee: null });
+    }
+
+    function applyEmployeeFilters(employeeId){
+      const date = document.getElementById('employeeDate').value || todayStr();
+      const from = document.getElementById('employeeFrom').value || startOfMonthStr();
+      const to = document.getElementById('employeeTo').value || todayStr();
+      setSearchParams({ employee: employeeId, date, from, to });
+    }
+
+    function quickEmployeePeriod(employeeId, mode){
+      const date = todayStr();
+      const from = mode === 'year' ? startOfYearStr() : mode === 'month' ? startOfMonthStr() : date;
+      const to = date;
+      setSearchParams({ employee: employeeId, date, from, to });
     }
 
     function initRender(){
-      const employeeId=new URLSearchParams(window.location.search).get('employee');
-      if(employeeId) renderEmployeePage(employeeId); else renderDashboard();
+      const employeeId = new URLSearchParams(window.location.search).get('employee');
+      if(employeeId) renderEmployeePage(employeeId);
+      else renderDashboard();
     }
 
-    window.addEmployee=addEmployee;
-    window.updateTaskField=updateTaskField;
-    window.addCustomTask=addCustomTask;
-    window.deleteTask=deleteTask;
-    window.resetEmployeeStatuses=resetEmployeeStatuses;
+    window.addEmployee = addEmployee;
+    window.updateTaskField = updateTaskField;
+    window.addCustomTask = addCustomTask;
+    window.deleteTask = deleteTask;
+    window.resetEmployeeDate = resetEmployeeDate;
+    window.applyDashboardFilters = applyDashboardFilters;
+    window.quickPeriod = quickPeriod;
+    window.applyEmployeeFilters = applyEmployeeFilters;
+    window.quickEmployeePeriod = quickEmployeePeriod;
 
     initFirebase();
   </script>
